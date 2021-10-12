@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* A LINHA 1 É CHAMADA DE REGRA EM CSS
+Linha 1 serve para ocorrer uma compatibilidade de caracteres*/
+/*Uma vez feito a configuração, é possível chamar a configuração através da TAG LINK e usando o nome do arquivo como parametro*/
+ 
+
+    body{
+
+        font-family: Arial, Helvetica, sans-serif; 
+        color: rgb(159, 159, 196);
+        background-color: lightgreen;
+        font-size: 20px;
+    }
+    h1{
+        color: rgb(0, 171, 169)
+
+    }
+    h2{
+        color:teal;
+    }
+    p{
+         color:rgb(156, 9, 9);
+    }

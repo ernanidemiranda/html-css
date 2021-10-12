@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+
+    <style>
+
+    /* SELETORES PERSONALIZADOS
+    
+    #  = id
+    .  = class
+    :  = pseudo-class
+    :: = pseudo-elementos
+    >  = children    
+
+
+
+
+*/
+
+
+
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /*  o NONE tira o sublinhado padrão dos links*/
+            font-weight: bold; /*negrito véio na fonte da tag a */
+        }
+        a:visited{ /*ee uma pseudo classe relacionada as cores do link antes/depois do view */
+            color: darkred;
+        }
+
+        a:hover{ /* quando passar o mouse sobre o link, irá ficar subinhado*/
+
+                color: black;
+                text-decoration: underline  ;
+
+        }
+
+        a:active{ /*AO MANTER O CLICK SEGURADO SOBRE OS LINKS, a descrição ficará yellow*/
+
+        color: yellow;
+        }
+        
+       /* a::before{} - nesse caso aparecia antes do link*/
+
+        a::after{ /*permite que possa formatar um pedaço especifico de um elemento - no caso after, após o link*/
+            content: '[link]'; /*CONTENT E CONTEUDO, FAZ COM O QUE A PALAVRA LINK APAREÇA*/
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+
+         <li><a href="https://gustavoguanabara.github.io" >Repositório GitHub</a></li>
+         <li> <a href="https://Youtube.com/cursoemvideo">Canal do Youtube</a> </li>
+         <li> <a href="https://www.cursoemvideo.com"> Site do CursoemVideo</a></li>
+
+    </ul>
+</body>
+</html>

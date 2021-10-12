@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+        header{
+            
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+           /* box-shadow: 3px 3px 3px black;  Nesse caso é o deslocamento horizontal, logo o vertical, logo o espalhamento e a cor */
+            
+        }
+
+        nav > a { /* TODO LINK (a) QUE TEM DENTRO DO NAV IRÁ RESPEITAR A CONFIG ABAIXO*/
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            
+        
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            margin-right: 30px;
+
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px 20px 0px;
+            /*existe as propriedas do border-radius - são elas na respectiva ordem:
+            
+                - border-top-left-radius
+                - border-top-right-radius
+                - border-bottom-right-radius
+                - border-bottom-left-radius */
+
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+
+        }
+
+        article > aside { /* ASIDE É FILHO DO ARTICLE, REPRESENTADO PELO SINAL > */
+            background-color:  rgb(165, 165, 165);
+            
+        }
+        footer{
+            font-family: cursive;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+       
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--As tags de agrupamento são a DIV e a SPAN -->
+
+    <!-- <div></div> É uma tag do tipo BOX LEVEL-->
+    <!-- <span></span> É uma tag do tipo INLINE LEVEL-->
+    <!-- Tanto o HEADER, quanto o NAV, MAIN, FOOTER, todos são como DIV's, SÃO DIV Semanticas que facilitam os motores de busca-->
+
+    <header> <!--CABEÇALHO, NÃO CONFUNDIR COM CABEÇA, -->
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main> <!--MAIN É A TAG DO CONTEUDO PRINCIPAL-->
+        <section id="assuntos">
+            <p>Esportes Política e Tecnologia no Brasil</p>
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur quasi velit sapiente dolorum amet expedita praesentium eos aliquid perspiciatis aspernatur itaque nobis veritatis officia, fugiat sint omnis? Qui, voluptatibus.</p>
+                <aside>
+                    <p>Artigo escrito por Ernani de Miranda</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticias sobre o Estado</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum quaerat dolore quos corporis doloribus hic molestiae, corrupti totam obcaecati labore ex, dolores enim qui laudantium voluptates accusantium laborum non.</p>
+                <aside>
+                    Artigo escrito por Carmen Lucia
+                </aside>
+            </article>
+            
+        </section>
+    </main>
+    <footer> <!--FOOTER É A TAG DO RODAPÉ-->
+        <p>Desenvolvido por Ernani de Miranda</p>
+    </footer>
+    <div id="bola"></div>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /*font face para poder trazer uma fonte externa.. salvar os arquivos baixados no diretorio */
+        @font-face {
+            font-family: 'FONTE EXTERNA' ;
+            src: url('SandyKids.otf') format('opentype'), url('SandyKidsRegular.ttf') format('trutype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*tipos de formato
+                - opentype(otf)
+                - trutype(ttf)
+                - embedded-opentype
+                - truetype-att (apple advanced typography)
+                - svg
+            */
+        }
+body{
+
+    font-family: 'FONTE EXTERNA', Helvetica, sans-serif;
+}
+h1{
+
+    font-family: 'FONTE EXTERNA', Times, serif;
+    font-size: 10em;
+}
+p{
+    font-size: 50px;}   
+     </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Estou testando fontes personalizadas com esses códigos.</p>
+</body>
+</html>

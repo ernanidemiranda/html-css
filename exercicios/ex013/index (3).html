@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5 - Hospedagem local</title>
+
+
+</head>
+<body>
+
+    <h1>Nesse exercício iremos aprender a inserir vídeos usando HTML5 através de uma hospedagem local</h1>
+    <p><strong><em>Esse vídeo estará hospedado no meu próprio servidor  </em></strong></p>
+
+    <video src="midia/video_convertido_menor_tamanho.mp4" width="500" controls>   </video> <br>
+
+    <video src="midia/video.mp4" width="400" controls ></video> <br>
+  
+    <video src="midia/video.mp4" width="300" controls></video> <br>
+    <!--Da linha 11 ate a linha 15 são exemplos de videos inseridos com a largura(width) em diferentes configurações-->
+
+    <video poster="imagens/coca_poster.jfif" controls width="250" loop > <br>
+    <!--POSTER SERVE PARA COLOCAR UMA  ESPECIE DE "CAPA" NO VÍDEO-->
+    <source src="midia/video.mp4"  type="video/mp4">
+    <source src="midia/video.m4v" type="video/mp4">
+    <source src="midia/video.webm" type="video/webm">
+    <source src="midia/video.ogv" type="video/ogv">
+    
+    <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+
+    <!--Na situação entre as linhas 18 e linha 24, o código irá primeiro executar a linha 19, caso nao houver compatibilidade ele pulará para o arquivo seguinte, e assim sucessivamente-->
+    
+    ></video>
+
+    <h1>Inserindo videos direto do youtube</h1>
+
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/wzvZjQkvOrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>No YOUTUBE, ao inserir o vídeo, é interessante lembrar que qualquer pessoa poderá ter acesso ao conteudo, uma vez que é gratuíto</h2> <br>
+
+    <h1> É possível inserir vídeos usando o VIMEO também!</h1>
+    <p><strong><em>O VIMEO é uma plataforma semelhante ao youtube, ele possui algumas vantagens e desvantagens</em></strong></p>
+
+    <ol>
+
+        <li type="disc">Vantagens do <strong>VIMEO</strong></li>
+        - ele é personalizavel <br>
+        - os videos sao mostrados com um pouco mais de fluidez, nitidez <br> <br>
+        <li type="disc">Desvantagem do <strong>VIMEO</strong></li>
+        - o serviço é pago e nao é barato
+        
+    </ol>
+
+    <h2>Vale lembras que ao usar os videos de plataformas externas, não será consumida a banda do próprio servidor, e sim a banda do servidor que estará disponibilizando o vídeo, que no caso é o youtube ou vimeo</h2>
+    
+</body>
+</html>

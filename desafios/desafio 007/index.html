@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+    <link rel="shortcut icon" href="Hopstarter-Square-Flags-Brazil-Flag.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Esse é o desafio 007 utilizando imagens dinâmicas</h1>
+
+    <p>Verifique abaixo as imagens. Para testar se a imagem está dinamica ou não, aumente e diminua o tamanho  do navegador no seu dispositivo</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Paisagem com uma pessoa de braços abertos">
+
+     <!--Media - para dar parametros, a partir de quantos pixels que a mudança ocorre
+            SrcSet -Para informar o nome do arquivo que será carregado a medida que os pixels do paramentro media forem excedidos
+            Type -  informar o tipo da mídia que está sendo inserido-->
+
+    </picture>
+
+    
+</body>
+</html>

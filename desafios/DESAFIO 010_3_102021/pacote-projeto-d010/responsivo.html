@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+
+    <style>
+        body{
+            background-color: gray;
+
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+            min-width: 320px; /*320 é a largura máxima de dispositivos antigos*/
+            max-width: 800px; /* esses atributos deixam o texto responsivo*/
+
+
+            margin: auto; /*ja deixa o bloco main centralizado*/
+
+
+        }
+
+        img { /*deixa as imagens responsivas*/ 
+
+            width: 100%;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Testando a Responsividade</h1> 
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas magni deserunt. Quae assumenda animi
+            ducimus ipsum nesciunt magni, ipsa possimus atque perferendis expedita sed voluptate neque numquam, nihil
+            aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum, explicabo quos dolorem
+            itaque enim eos iste libero, similique nobis eligendi. Ipsa modi minus, inventore ducimus harum id? Odio,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex minima porro consequatur harum nemo
+            laborum enim, praesentium quae aspernatur doloremque ab culpa impedit deserunt debitis tempore nesciunt?
+            Officia.
+        </p>
+
+        <picture>
+            <source media="(max-width: 700px)" srcset= "imagens/irina-blok-pq.jpg"> 
+            
+            <img src="imagens/irina-blok.jpg" alt="irina blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas magni deserunt. Quae assumenda animi
+            ducimus ipsum nesciunt magni, ipsa possimus atque perferendis expedita sed voluptate neque numquam, nihil
+            aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum, explicabo quos dolorem
+            itaque enim eos iste libero, similique nobis eligendi. Ipsa modi minus, inventore ducimus harum id? Odio,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex minima porro consequatur harum nemo
+            laborum enim, praesentium quae aspernatur doloremque ab culpa impedit deserunt debitis tempore nesciunt?
+            Officia.
+        </p>
+
+    </main>
+
+</body>
+
+</html>

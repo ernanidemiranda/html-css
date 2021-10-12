@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>   
+
+    <p>O comando <code>document.GetElementById('teste')</code> é escrito em JavaScript. <em>USANDO A TAG CODE</em> </p>
+
+    <p>Com o comando CODE, a fonte se torna <strong>monoespaçada</strong>, dessa forma separa o mesmo espaço para cada letra, mesmo se for uma letra <strong>i</strong> que é fina, quanto se for uma letra <strong>o</strong> que é mais grossa, ambas terão o mesmo espaço.</p>
+
+    
+    <p>O comando document.GetElementById('teste') é escrito em JavaScript. <em>SEM O USO DA TAG CODE</em></p>
+
+  <code>
+    num = int(input('Digite um número '))
+    if num % 2 == 0;
+        print(f' o número {num} é PAR) 
+    else
+        print(f' o numero {num é} é IMPAR)
+        print('Fim do programa')
+
+  </code>  
+
+    <!--Ele irá apresentar o código, mas nao estará identado-->
+
+
+  <h3>USANDO A TAG 'PRE'</h3>
+
+  <p>Dentro da tag PRE,  é possível quebrar linhas usando apenas o botão da barra de espaço, não é o adequado, mas funciona.</p>
+    <p>Agora colocando todo o código dentro da tag 'PRE', é possível mostrar o código identado, VEJA ABAIXO!</p>
+    <pre><code>
+num = int(input('Digite um número '))
+if num % 2 == 0;
+    print(f' o número {num} é PAR) 
+else
+    print(f' o numero {num é} é IMPAR)
+    print('Fim do programa')
+    
+    
+        </code>
+    </pre>
+
+    <!--Ele irá apresentar o código, mas agora  estará identado-->
+
+    <h2>Citações</h2>
+
+    <p>Como diria o pai de um amigo, <q>o computador é uma burro muito rápido!</q></p>
+
+    <h2>Citações Completas</h2>
+
+    <p>Como diria o autor Fulano de tal, no seu livro de Linguagens de marcação:
+        <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+            <!-- o cite é um parametro que mostra o link para os mecanismos internos, de busca, nao muda o visual da página-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil error obcaecati exercitationem laboriosam perspiciatis voluptas doloremque eveniet odit magni hic quae, dolorum voluptatibus reiciendis sunt atque totam quaerat. Delectus, aliquid?
+        </blockquote>
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> , estou adorando</p>
+
+    <p>O MEU NOME É <abbr title="CARMEN LUCIA DA COSTA DO POÇÃO">MELUCIA DO CORREGO</abbr></p>
+
+    <!-- A tag 'abbr' é sobre abreviações, o titulo deve ser o significado real da abreviação usada no texto-->
+
+    <h2>Texto Invertido</h2>
+
+    <p> <bdo dir="rtl">O MUNDO ESTÁ DO AVESSO</bdo></p>
+    <p> <bdo dir="ltr">O MUNDO ESTÁ DO AVESSO</bdo></p>    
+
+    <!--NAO SERVE PRA PORRA NENHUMA, SÓ LE AS PALAVRAS AO CONTRARIO KAKA,
+     rtl = right to left - da direita para esquerda
+     ltr  = left to right - da esquerda para a direita       
+    -->
+
+</body>
+</html>

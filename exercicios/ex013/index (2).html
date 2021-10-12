@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de CSS internas</title>
+</head>
+
+<style>
+    /*body, h1, h2, p, são seletores criados para dar a configuração de estilo em tudo que estiver no corpo do documento
+     Cada seletor possui sua configuração especifica conforme o exemplo abaixo
+     Dessa forma, tudo que está dentro do body terá fonte arial, com o fundo em RGB(nome da cor)
+     Dessa forma tudo que for H1 será impresso na tela na cor VERDE
+     Dessa forma tudo que for H2 será impresso na tela na cor ALARANJADO
+     Dessa forma tudo que for p será impresso na tela na cor PRETO*/
+    body{
+        font-family: Arial, Helvetica, sans-serif; background-color: rgb(238, 245, 245);
+        color: blue;
+    }
+    h1{
+        color: green;
+
+    }
+    h2{
+        color: orange;
+    }
+    p{
+         color:black;
+         text-align: justify;
+         
+    }
+</style>
+<body>
+
+    <!--No método INTERNA as CSS ficam configuradas dentro da tag HEAD, dessa maneira, irá levar as configurações, sempre que a tag for mencionada no código-->
+
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim doloremque ratione quis dolorum voluptas vel rerum excepturi, sit asperiores temporibus adipisci laudantium porro accusamus quae unde, et ad molestiae!</p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi autem ab ipsum fuga molestiae dignissimos, cumque delectus doloremque, vitae veniam quidem eaque hic itaque ipsa at dolores distinctio quibusdam accusantium?</p>
+    <h2>Capítulo 2.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus assumenda deserunt fuga doloribus provident quo enim molestias alias rerum. Perspiciatis, qui nobis. Voluptates in atque modi voluptatibus quo, laudantium non?</p>
+
+
+
+
+</body>
+</html>

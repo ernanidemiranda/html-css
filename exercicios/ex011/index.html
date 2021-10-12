@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+
+    <h1>Imagem Dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--Width significa largura, px significa pixels-->
+        <!--parametro diz que se exceder a quantidade de pixel, ele irá carregar a imagem do segundo parametro-->
+        
+        
+        <img src="imagens/foto-g.png" alt="Imagem Flexível"> <!--A base é sempre a imagem maior, e acima delas as menores.-->
+    
+    </picture>
+
+    <h1>Reproduzinho Aúdios em HTML5</h1>
+
+    <p>Vamos aprender a reproduzir os aúdios, VEJA</p>
+
+    <audio src="midias/happy-mistake.mp3" controls autoplay></audio> <br>
+
+    <audio src="midias/Two Sides - SefChol.mp3" controls autoplay></audio> <br>
+
+    <audio preload="metadata" controls autoplay loop>
+        <!--preload irá definir se o audio sera pre carregado ou não-->
+        <!--Dentro do preload existem 3 valores
+        
+            METADATA - carrega as informações sobre o arquivo
+            NONE - não irá carregar nada, até que o usuário aperte o play
+            AUTO - irá carregar o arquivo de audío inteiro, mesmo que o usuário NAO aperte o play-->
+
+            <!--o parametro controls, vai fazer com apareça um box com os controle de play e pause pra midia anexada-->
+    
+            <!--Já o parametro autoplay seria para fazer com o que  a midia reproduza automaticamente ao acessar o site-->
+    
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+
+        <!--O navegador irá executar primeiro o arquivo tipo mpeg/mp3, caso não houver compatibilidade ele irá executar o arquivo tipo ogg, se não houver compatibilidade ele irá executar o arquivo do tipo wav, e se ainda assim não executar, ele dará a opçao de fazer o download do arquivo-->
+
+    </audio>
+          <p>Seu navegador não suporta o audio, se preferir faça o download do arquivo </p>
+
+        <a href="midias/guanacast-33.mp3" download="guanacast-33">Clique aqui para baixar o audio> </a>
+            <!-- o código da linha 55 não está realizando o download, e sim executando o arquivo no navegador-->
+
+
+            <h1>Reproduzindo Vídeos em HTML5</h1>
+
+
+
+</body>
+</html>
