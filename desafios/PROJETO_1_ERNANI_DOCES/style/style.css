@@ -64,8 +64,11 @@ header{
 header > h1 {
 
     font-size: 60px; 
-    color: rgba(66, 64, 64, 0.938);
+    color: rgba(27, 22, 22, 0.938);
     font-family: var(--fonte-corrida);
+    
+    text-shadow: rgb(224, 14, 137) 3px 3px 3px ;
+    
 
 }
 
@@ -75,6 +78,7 @@ header > p {
     font-size: 22px;
      color:rgba(66, 64, 64, 0.938);
      font-family:monospace ;
+     text-shadow: rgb(224, 14, 137) 3px 3px 3px ;
     
 }
 
