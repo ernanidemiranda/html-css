@@ -157,7 +157,8 @@ article > h2 {
     font-family: var(--fonte-corrida);
     text-align: center;
     font-weight: lighter;
-
+    margin-top: 1px;
+    
     
 }
 
